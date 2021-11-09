@@ -93,18 +93,13 @@
 .input-valid{
     border: 1px solid #44980066 !important;
 } */
-/* .input-error{
+.input-error{
     border: 1px solid #F35E4B !important;
-} */
+}
 .input-valid{
     border: 1px solid #459800 !important;
-    background-color: #44980007 !important;
-    color: #459800 !important;
 }
 
-.input-valid::placeholder{
-    color: #44980078 !important;
-}
 .input-focused{
     border: 1px solid #3E3E3E !important;
 }
