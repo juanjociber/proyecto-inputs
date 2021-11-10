@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUT - tooltip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/semantic.css">
+    <script src="js/plugins/semantic.js"></script>
+    <link rel="stylesheet" href="css/input.css">
+</head>
+<body>
+    <div class="box">
+        <header class="header">
+            <i class="rss icon mutual"></i>
+        </header>
+        <div class="content">
+            <section>
+                <p class="titulo">Pasaporte + tooltip</p>
+            </section>
+
+        <div class="ui container">
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja caja-pasaporte">
+                        <label class="nombre-input">Default</label>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">* Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid-3 tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <span class="span">(Opcional)</span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja caja-pasaporte">
+                        <label class="nombre-input">Hover</label>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">* Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid-3 tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <span class="span">(Opcional)</span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja caja-pasaporte">
+                        <label class="nombre-input">Focused</label>
+                    </div>
+                    <div class="field caja grid--mod tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja input-focused">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">* Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja input-focused">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid-3 tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <span class="span">(Opcional)</span>
+                        <div class="ui left labeled input fluid contenedor-caja input-focused">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja caja-pasaporte">
+                        <label class="nombre-input">Entered</label>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">* Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid-3 tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <span class="span">(Opcional)</span>
+                        <div class="ui left labeled input fluid contenedor-caja">
+                            <div class="ui rut dropdown label label-phone label-focused">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja caja-pasaporte">
+                        <label class="nombre-input">Disabled</label>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja disabled">
+                            <div class="ui rut dropdown label label-phone label-phone-disabled">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">* Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja disabled">
+                            <div class="ui rut dropdown label label-phone label-phone-disabled">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid-3 tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <span class="span">(Opcional)</span>
+                        <div class="ui left labeled input fluid contenedor-caja disabled">
+                            <div class="ui rut dropdown label label-phone label-phone-disabled">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja caja-pasaporte">
+                        <label class="nombre-input">Valid</label>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja input-valid">
+                            <div class="ui rut dropdown label label-phone">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">* Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja input-valid">
+                            <div class="ui rut dropdown label label-phone">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid-3 tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <span class="span">(Opcional)</span>
+                        <div class="ui left labeled input fluid contenedor-caja input-valid">
+                            <div class="ui rut dropdown label label-phone">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja caja-pasaporte">
+                        <label class="nombre-input">Error</label>
+                    </div>
+                    <div class="field caja caja grid--mod tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja input-error">
+                            <div class="ui rut dropdown label label-phone label-phone-error">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid--mod tooltip top">
+                        <label class="label">* Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <div class="ui left labeled input fluid contenedor-caja input-error">
+                            <div class="ui rut dropdown label label-phone label-phone-error">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                    <div class="field caja caja-pasaporte grid-3 tooltip top">
+                        <label class="label">Label</label>
+                        <span data-tooltip="12345678-9" data-position="top left">
+                            <a href="#"><i class="question circle icon icono text-error large" style="font-size: 20px;"></i></a>
+                        </span>
+                        <span class="span">(Opcional)</span>
+                        <div class="ui left labeled input fluid contenedor-caja input-error">
+                            <div class="ui rut dropdown label label-phone label-phone-error">
+                                <div class="text">Pasaporte</div>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <input class="input-phone" type="text" placeholder="Ej: 12345678-9">   
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+    </div>
+
+    <script src="js/modulos.js" type="module"></script>
+    <script src="js/no-modulos.js" nomodule></script>
+</body>
+</html>
