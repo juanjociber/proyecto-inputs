@@ -56,6 +56,10 @@
     color: #4A90E2;
     align-self: center;
 }
+.grid-2{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
 .grid-3{
     display: grid;
     grid-template-columns: 20% 10% 70% !important;
