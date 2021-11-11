@@ -1,4 +1,5 @@
-import { } from "./app.js";
+import { mostrarPass } from "./app.js";
+mostrarPass();
 
 
 

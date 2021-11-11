@@ -58,10 +58,6 @@ body{
 .cajas{
     margin: 48px 0px !important;
 }
-.icono{
-    color: #4A90E2;
-    align-self: center;
-}
 .grid-2{
     display: grid;
     grid-template-columns: 10% 90%;
@@ -72,7 +68,14 @@ body{
 }
 .grid--mod{
     display: grid;
-    grid-template-columns: 20% 60% !important;
+    grid-template-columns: 20% 10% !important;    
+}
+.icono{
+    font-size: 1.6em !important;
+    color: #4A90E2;
+    width: 100% !important;
+    height: 100% !important;
+    padding-top: 5px;
 }
 .span{
     display: flex;
@@ -85,7 +88,7 @@ body{
 }
 .input{
     grid-column: 1/4;
-    padding: 6px 16px !important;
+     padding: 6px 12px 6px 16px !important;
     
 }
 .label{
@@ -124,9 +127,10 @@ body{
 .mutual{
     color: #ffffff;
 }
+
 @media(min-width:482px){
     .grid--mod{
-        grid-template-columns: 15% 85% !important;
+        grid-template-columns: 15% 10% !important;
     }
     .grid-3{
         grid-template-columns: 15%  10% 75% !important;        
@@ -134,15 +138,15 @@ body{
 }
 @media(min-width:576px){
     .grid--mod{
-        grid-template-columns: 12% 88% !important;
+        grid-template-columns: 12% 10% !important;
     }
     .grid-3{
-        grid-template-columns: 12%  18% 70% !important;        
+        grid-template-columns: 12%  10% 70% !important;        
     }
 }
 @media(max-width:767px){
     .grid--mod{
-        grid-template-columns: 15% 85%;
+        grid-template-columns: 15% 10%;
     }
 }
 @media(min-width:768px){
@@ -159,7 +163,7 @@ body{
         width: 100% !important;
     }
     .grid--mod{
-        grid-template-columns: 10% 90%;
+        grid-template-columns: 10% 10%;
     }
     .grid-3{
         grid-template-columns: 10%  15% 75%;
@@ -167,7 +171,7 @@ body{
 }
 @media(min-width:992px){
     .grid--mod{
-        grid-template-columns: 40% 60% !important;
+        grid-template-columns: 40% 10% !important;
     }
     .grid-3{
         grid-template-columns: 30% 15% 55% !important;        
@@ -175,7 +179,7 @@ body{
 }
 @media(min-width:1200px){
     .grid--mod{
-        grid-template-columns: 27% 73% !important;
+        grid-template-columns: 27% 15% !important;
     }
     .grid-3{
         grid-template-columns: 24% 16% 70% !important;
@@ -226,7 +230,7 @@ body{
     border: none !important;
     font-style: normal;
     font-weight: normal;    
-    font-size: 12px;
+    font-size: 1.2em;
     line-height: 175%;
     color: #9B9B9B;
 }
@@ -285,4 +289,69 @@ body{
 }
 .label-focused{
     background-color: #f3f3f3 !important;
+}
+
+/*=========================
+-> FECHA
+===========================*/
+.campo-input{
+    position: relative;
+    grid-column: 1 / 4;
+}
+.icono-interno{
+    color: #DDDDDD;
+    font-size: 1.6em !important;
+    position: absolute;
+    right: 0;
+    top: 0.5em;
+    cursor: pointer;
+}
+.input-fecha{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em !important;
+    line-height: 175%;
+    color: #DDDDDD !important;
+    padding: 6px 12px 6px 16px !important;
+    position:relative;
+}
+.campo-input-fecha{
+    grid-column: 1 / 3;
+    position: relative;
+}
+.input-fecha-hover:hover{
+    border:1px solid #4A90E2 !important;
+}
+.input-entered{
+    color: #858585 !important;
+}
+
+/*=================
+-> PASSWORD
+===================*/
+.input-password{
+    font-size: 1.6em !important;
+    color: #8a8a8a !important;
+}
+.text-area{
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 1.6em !important;
+    line-height: 175% !important;
+    text-align: justify !important;
+    color: #DDDDDD;
+    padding: 6px 32px 0px 6px !important;
+}
+.text-entered::placeholder{
+    color: #565656 !important;
+    font-weight: 300 !important;
+}
+.bg-disabled{
+    background-color: #dcdcdc !important;
+}
+.bg-disabled::placeholder{
+    color: #2c2c2c !important;
+}
+.height-focused{
+    height: 2em;
 }
