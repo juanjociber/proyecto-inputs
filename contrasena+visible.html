@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FECHA HINT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/semantic.css">
+    <script src="js/plugins/semantic.js"></script>
+    <link rel="stylesheet" href="css/input.css">
+</head>
+<body>
+    <div class="box">
+        <header class="header">
+            <i class="rss icon mutual"></i>
+        </header>
+        <div class="content">
+            <section>
+                <p class="titulo">Contraseña + visible</p>
+            </section>
+           <div class="ui container">
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja">
+                        <label class="nombre-input">Default</label>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password"  id="pass1" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">*  Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password" id="pass2" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass2over();" onmouseout="pass2out();" ></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja grid-2">
+                        <label class="label">Label</label>
+                        <span class="span">(Opcional)</span>
+                        <div class="campo-input">
+                            <input class="input input-password" id="pass3" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass3over();" onmouseout="pass3out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-grid">Helper message</small>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja">
+                        <label class="nombre-input">Hover</label>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-fecha-hover" id="pass4" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass4over();" onmouseout="pass4out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">*  Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-fecha-hover" id="pass5" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass5over();" onmouseout="pass5out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja grid-2">
+                        <label class="label">Label</label>
+                        <span class="span">(Opcional)</span>
+                        <div class="campo-input">
+                            <input class="input input-password input-fecha-hover" id="pass6" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass6over();" onmouseout="pass6out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-grid">Helper message</small>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja">
+                        <label class="nombre-input">Focused</label>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-focused" id="pass7" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass7over();" onmouseout="pass7out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">*  Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-focused" id="pass8" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass8over();" onmouseout="pass8out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja grid-2">
+                        <label class="label">Label</label>
+                        <span class="span">(Opcional)</span>
+                        <div class="campo-input">
+                            <input class="input input-password input-focused" id="pass9" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass9over();" onmouseout="pass9out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-grid">Helper message</small>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja">
+                        <label class="nombre-input">Entered</label>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-entered"id="pass10" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass10over();" onmouseout="pass10out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">*  Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-entered" id="pass11" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass11over();" onmouseout="pass11out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja grid-2">
+                        <label class="label">Label</label>
+                        <span class="span">(Opcional)</span>
+                        <div class="campo-input">
+                            <input class="input input-password input-entered" id="pass12" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass12over();" onmouseout="pass12out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-grid">Helper message</small>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja">
+                        <label class="nombre-input">Disabled</label>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password field disabled" id="pass13" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass13over();" onmouseout="pass13out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">*  Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password field disabled" id="pass14" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass14over();" onmouseout="pass14out();"></i>
+                        </div>
+                        <small class="mensaje">Helper message</small>
+                    </div>
+                    <div class="field caja grid-2">
+                        <label class="label">Label</label>
+                        <span class="span">(Opcional)</span>
+                        <div class="campo-input">
+                            <input class="input input-password field disabled" id="pass15" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass15over();" onmouseout="pass15out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-grid">Helper message</small>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja">
+                        <label class="nombre-input">Valid</label>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-valid" id="pass16" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass16over();" onmouseout="pass16out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-valid"><i class="check circle icon"></i>Helper message</small>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">*  Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-valid" id="pass17" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass17over();" onmouseout="pass17out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-valid"><i class="check circle icon"></i>Helper message</small>
+                    </div>
+                    <div class="field caja grid-2">
+                        <label class="label">Label</label>
+                        <span class="span">(Opcional)</span>
+                        <div class="campo-input">
+                            <input class="input input-password input-valid" id="pass18" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass18over();" onmouseout="pass18out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-grid mensaje-valid"><i class="check circle icon"></i>Helper message</small>
+                    </div>
+                </div>
+            </form>
+
+            <form class="ui form">
+                <div class="three fields cajas">
+                    <div class="field caja">
+                        <label class="nombre-input">Error</label>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-error" id="pass19" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass19over();" onmouseout="pass19out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-error"><i class="times circle icon"></i>Helper message</small>
+                    </div>
+                    <div class="field caja">
+                        <label class="label">*  Label</label>
+                        <div class="campo-input">
+                            <input class="input input-password input-error" id="pass20" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass20over();" onmouseout="pass20out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-error"><i class="times circle icon"></i>Helper message</small>
+                    </div>
+                    <div class="field caja grid-2">
+                        <label class="label">Label</label>
+                        <span class="span">(Opcional)</span>
+                        <div class="campo-input">
+                            <input class="input input-password input-error" id="pass21" type="password" placeholder="Lorem Ipsum">
+                            <i class="eye icon icono-interno" onmouseover="pass21over();" onmouseout="pass21out();"></i>
+                        </div>
+                        <small class="mensaje mensaje-grid mensaje-error"><i class="times circle icon"></i>Helper message</small>
+                    </div>
+                </div>
+            </form>
+        </div> 
+    </div>
+    <script src="js/app/app.js"></script>
+    
+</body>
+</html>
