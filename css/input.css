@@ -305,6 +305,7 @@ body{
     right: 0;
     top: 0.5em;
     cursor: pointer;
+
 }
 .input-fecha{
     font-style: normal;
@@ -324,6 +325,10 @@ body{
 }
 .input-entered{
     color: #858585 !important;
+}
+.input-activado:focus{
+    border: 1px solid #459800 !important;
+    outline: none;
 }
 
 /*=================
