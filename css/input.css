@@ -360,7 +360,7 @@ body{
     color: #2c2c2c !important;
 }
 .height-focused{
-    height: 2em;
+    height: auto;
 }
 
 textarea{
