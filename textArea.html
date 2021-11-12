@@ -70,8 +70,8 @@
                     </div>
                     <div class="field caja">
                         <label class="label">Label</label>
-                        <!-- <textarea id="txtarea" placeholder="" rows="1"></textarea> -->
-                        <textarea class="text-area input-focused height-focused" name="" id="" cols="30" rows="1" placeholder=""></textarea>
+                        <textarea id="txtarea" placeholder="" rows="1"></textarea>
+                        <!-- <textarea class="text-area input-focused height-focused" name="" id="" cols="30" rows="1" placeholder=""></textarea> -->
                         
                     </div>
                     <div class="field caja">
@@ -171,23 +171,6 @@
             </form>
         </div> 
     </div>
-
-      
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <script>
-        window.addEventListener("load",function(){
-            function autoTextarea(id) {
-                document.getElementById(id).addEventListener('keyup', function() {
-                    this.style.overflow = 'hidden';
-                    this.style.height = 0;
-                    this.style.height = this.scrollHeight + 'px';
-                }, false);
-            }
-            autoTextarea('txtarea');
-        });
-    </script>
 
     <script src="js/modulos.js" type="module"></script>
     <script src="js/no-modulos.js" nomodule></script>

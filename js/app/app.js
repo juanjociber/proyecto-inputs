@@ -620,4 +620,16 @@
                 viewpass21.classList.toggle('fa-eye-slash')
             }
     })
- })
+ });
+
+//  window.addEventListener("load",function(){
+//     function autoTextarea(id) {
+//         document.getElementById(id).addEventListener('keyup', function() {
+//             this.style.overflow = 'hidden';
+//             this.style.height = 0;
+//             this.style.height = this.scrollHeight + 'px';
+//         }, false);
+//     }
+//     autoTextarea('txtarea');
+// });
+
