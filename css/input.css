@@ -64,11 +64,15 @@ body{
 }
 .grid-3{
     display: grid;
-    grid-template-columns: 20% 10% 70% !important;
+    grid-template-columns: 42px 20px auto !important;
 }
 .grid--mod{
     display: grid;
-    grid-template-columns: 20% 10% !important;    
+    grid-template-columns: 42px 20px !important;    
+}
+.grid--mod2{
+    display: grid;
+    grid-template-columns: 52px 20px !important;
 }
 .icono{
     font-size: 1.6em !important;
@@ -129,21 +133,21 @@ body{
 }
 
 @media(min-width:482px){
-    .grid--mod{
-        grid-template-columns: 15% 10% !important;
-    }
-    .grid-3{
+    /* .grid--mod{
+        grid-template-columns: 42px 20px !important;
+    } */
+    /* .grid-3{
         grid-template-columns: 15%  10% 75% !important;        
-    }
+    } */
 }
-@media(min-width:576px){
+/* @media(min-width:576px){
     .grid--mod{
         grid-template-columns: 12% 10% !important;
     }
     .grid-3{
-        grid-template-columns: 12%  10% 70% !important;        
+        grid-template-columns: 42px 20px 85% !important;        
     }
-}
+} */
 @media(max-width:767px){
     .grid--mod{
         grid-template-columns: 15% 10%;
@@ -162,29 +166,31 @@ body{
     .field{
         width: 100% !important;
     }
-    .grid--mod{
+    /* .grid--mod{
         grid-template-columns: 10% 10%;
     }
     .grid-3{
-        grid-template-columns: 10%  15% 75%;
-    }
+        grid-template-columns: 42px 20px 90% !important;
+    } */
 }
-@media(min-width:992px){
+/* @media(min-width:992px){
     .grid--mod{
         grid-template-columns: 40% 10% !important;
     }
     .grid-3{
-        grid-template-columns: 30% 15% 55% !important;        
+        grid-template-columns: 42px 20px 90% !important;
+       
     }
-}
-@media(min-width:1200px){
+} */
+/* @media(min-width:1200px){
     .grid--mod{
         grid-template-columns: 27% 15% !important;
     }
     .grid-3{
-        grid-template-columns: 24% 16% 70% !important;
+        grid-template-columns: 42px 20px 100% !important;
+
     }
-}
+} */
 
 /* /*==========================================
 -> TOOLTIP
@@ -302,7 +308,7 @@ body{
     color: #DDDDDD;
     font-size: 1.6em !important;
     position: absolute;
-    right: 0;
+    right: 0.2em;
     top: 0.5em;
     cursor: pointer;
 
@@ -330,10 +336,6 @@ body{
     border: 1px solid #459800 !important;
     outline: none;
 }
-
-/*=================
--> PASSWORD
-===================*/
 .input-password{
     font-size: 1.6em !important;
     color: #8a8a8a !important;
@@ -360,3 +362,17 @@ body{
 .height-focused{
     height: 2em;
 }
+
+
+textarea {
+    /* margin:0px 0px; this is redundant anyways since its specified below*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* increased! */
+    /* height:16px; */
+    line-height:16px;
+    width: 100%;
+    /* changed from 96 to 100% */
+    display: block;
+    /* margin:0px auto; not needed since i have width 100% now */
+  }
