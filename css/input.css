@@ -27,7 +27,7 @@ body{
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
-    font-size: 6.4em;
+    font-size: 6.4em !important;
     line-height: 64px;
     display: flex;
     align-items: center;
@@ -444,4 +444,23 @@ textarea{
 }
 .text-dropdown{
     font-size: 1em !important;
+}
+.input-dropdown{
+    border: none !important;
+}
+.placeholder-dropdown::placeholder{
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 1.6em !important;
+    line-height: 175% !important;
+    color: #DDDDDD !important;
+}
+.label-rut{
+    padding: 10px 8px !important;
+}
+.grid-listado{
+    border: 1px solid blue !important;
+}
+.grid-listado label{
+    border: 1px solid red !important;
 }
